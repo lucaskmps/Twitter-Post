@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter Post</title>
+</head>
+<body>
+<header>
+    <div class="logo-box">
+        <img src="./img/logo.png" alt="">
+    </div>
+</header>
+<main id="wrapper">
+
+    <!-- Profile Box -->
+    <aside id="profile">
+        <!-- Background Porfile Image -->
+        <div class="background-profile">
+            <img src="./img/user/background.jpg" alt="">
+        </div>
+            <!-- Avatar&Username Box --> 
+            <div class="avatar-user-box">
+                <div class="avatar-box">
+                    <img src="./img/user/avatar.jpg" alt="">
+                </div>
+                <div class="username-box">
+                    <p>lucasc.</p>
+                    <span>@</span><span class="username">lucaskmps</span>
+                </div>
+            </div>
+            <!-- Tweets, Following, Followers -->
+            <div class="numbers-grid">
+                <p>Tweets</p>
+                <p>Following</p>
+                <p>Followers</p>
+                <span id="tweets-number-profile">0</span>
+                <span id="following">0</span>
+                <span id="followers">0</span>
+            </div>
+    </aside>
+
+    <main id="content">
+        <div class="post-box">
+            <!-- Wrapper dos menó -->
+            <div class="post-box-wrapper" id="post-box-wrapper">
+            <div class="post-box-avatar">
+                    <img src="./img/user/avatar.jpg" alt="">
+            </div>                       
+                <input id="input-tweet" type="text" placeholder="What's happening?" onclick="openInput('.post-box input', '.btn-wrapper')">
+            </div>
+            <!-- Botão -->
+            <div class="btn-wrapper">      
+                <button id="tweet-btn" onclick="makeTweet('#input-tweet')">Tweet</button>  
+            </div>             
+        </div>
+
+        <!-- Tweet Model 
+        <div class="tweet">
+            <div class="tweet-avatar"><img src="./img/user/avatar.jpg" alt=""></div>
+            <div class="right-wrapper">
+                <div class="tweet-name-user"><p>lucasc.</p><span>@lucaskmps</span></div>
+                <div class="tweet-text-box">bom dia fdps</div>
+                <div class="interations-box">
+                    <img id="commentsIcon" src="./img/comment.svg" alt="">
+                    <p id="comments">1</p>
+                    <img id="retweetsIcon" src="./img/retweet.svg" alt="">
+                    <p id="rts">221</p>
+                    <img id="likesIcon" src="./img/like.svg" alt="">
+                    <p id="likes">3</p>
+                </div>
+            </div>
+        </div>
+        -->
+    </main>
+
+</main>
+
+    <script src="app.js"></script>
+</body>
+</html>
